@@ -1,3 +1,4 @@
+cmake_minimum_required(VERSION 3.17)
 # serial tests
 set(serial_tests acoustic_duct_wave
                  acoustic_pml
@@ -7,6 +8,7 @@ set(serial_tests acoustic_duct_wave
                  fluid_gravity
                  fluid_pipe
                  fluid_pressure_driven
+                 fsi_benchmark
                  fsi_cavity
                  fsi_gravity
                  fsi_leaflet

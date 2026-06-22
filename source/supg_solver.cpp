@@ -406,7 +406,7 @@ namespace Fluid
 
   template <int dim>
   void SUPGFluidSolver<dim>::run_one_step(bool apply_nonzero_constraints,
-                                          bool /*assemble_system*/)
+                                          bool assemble_system)
   {
       (void)assemble_system;
 

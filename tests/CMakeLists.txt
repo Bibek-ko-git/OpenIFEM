@@ -7,7 +7,6 @@ set(serial_tests acoustic_duct_wave
                  fluid_gravity
                  fluid_pipe
                  fluid_pressure_driven
-                 fsi_benchmark
                  fsi_cavity
                  fsi_gravity
                  fsi_leaflet

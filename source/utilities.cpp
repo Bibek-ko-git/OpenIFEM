@@ -352,7 +352,7 @@ namespace Utils
     GridGenerator::subdivided_hyper_rectangle(bulk_triangulation,
                                               {compute_in_2d ? 22u : 25u, 4u},
                                               Point<2>(left, 0.0),
-                                              Point<2>(2.2, 0.41)); // change to 2.5, 0.41 for Turek-Hron benchmarking case
+                                              Point<2>(2.2, 0.41));
     std::set<Triangulation<2>::active_cell_iterator> cells_to_remove;
     Tensor<1, 2> cylinder_triangulation_offset;
     for (const auto cell : bulk_triangulation.active_cell_iterators())
@@ -498,7 +498,7 @@ namespace Utils
           {
             if (cell->face(f)->at_boundary())
               {
-                if (std::abs(cell->face(f)->center()[0] - 2.2) < 1e-12) // channge to - 2.5 for Turek Hron benchmarking case
+                if (std::abs(cell->face(f)->center()[0] - 2.2) < 1e-12)
                   {
                     cell->face(f)->set_all_boundary_ids(1);
                   }
